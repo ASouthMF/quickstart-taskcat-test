@@ -1,0 +1,19 @@
+project:
+  name: quickstart-taskcat-test
+  owner: aadam.southon@microfocus.com
+  shorten_stack_name: true
+  s3_regional_buckets: true
+  parameters:
+    KeyPairName: $[taskcat_getkeypair]
+  regions:
+    - eu-west-1       # EU (Ireland)
+    - eu-west-2       # EU (London)
+
+tests:
+  master:
+    template: ./test_cft.yml
+    parameters:
+      QueueName: "TaskcatQueue"
+    regions:
+      - eu-west-1          # Europe (Ireland)
+      - eu-west-2          # Europe (London)
