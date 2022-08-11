@@ -13,9 +13,9 @@ Resources:
         Fn::Join:
         - ''
         - - Ref: QueueName
-          - "-"
+          - "-@_!?"
           - Ref: AWS::StackName
 Outputs:
   MyQueueARN:
     Value:
-      Ref: ForcedFailure-MyQueue
+      Ref: MyQueue
