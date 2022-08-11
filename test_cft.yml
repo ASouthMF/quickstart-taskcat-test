@@ -9,6 +9,7 @@ Resources:
   MyQueue:
     Type: AWS::SQS::Queue
     Properties:
+      KmsMasterKeyId: forcedFailure
       QueueName:
         Fn::Join:
         - ''
