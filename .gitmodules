@@ -1,0 +1,3 @@
+[submodule "quickstart-microfocus-amc-es"]
+	path = quickstart-microfocus-amc-es
+	url = git@github.com:aws-quickstart/quickstart-microfocus-amc-es.git
